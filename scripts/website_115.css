@@ -1,0 +1,41 @@
+/* Website Specific Styles
+   
+   Updated: Thurs 13.01.09 - Caroline Rojas - Added Extra Banner Styles
+   
+   ----------------------------------------------------*/
+
+/* MAIN BACKGROUND IMAGE AND COLOUR
+   ----------------------------------------------------*/
+#main {
+	/* background: #7494AB url(http://www.swinburne.edu.au/images/backgrounds/highereducation.gif) no-repeat 986px 0px; */
+	background: #FFFFFF;
+}
+
+/* BANNER STYLES [NEW]
+   ----------------------------------------------------*/
+#banner { 
+	background: #9E251C url(http://www.swinburne.edu.au/images/banners/banner_engineering_left.gif) no-repeat;
+}
+
+#banner-small { 
+	background: #9E251C url() no-repeat;
+}
+
+#banner p#pagetitle span {
+	background: url(http://www.swinburne.edu.au/images/banners/banner-engineering-atom-optics.gif) no-repeat;
+}
+
+#banner-small p#pagetitle span {
+	background: url() no-repeat;
+}
+
+#banner div { 
+	background: url(http://www.swinburne.edu.au/images/banners/banner_engineering_right.gif) scroll no-repeat right top;
+}
+
+#column2 #banner div { 
+	background: url(http://www.swinburne.edu.au/images/banners/banner_engineering_right.gif) scroll no-repeat right top;
+}
+
+/* OTHER WEBSITE SPECIFIC STYLES
+   ----------------------------------------------------*/

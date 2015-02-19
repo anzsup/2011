@@ -1,0 +1,402 @@
+/* Swinburne Right Navigation Styles
+   
+   Updated: Mon 19.02.10 - Caroline Rojas - Removed height for the quicklinks area, adding padding. 
+   Updated: Mon 12.01.09 - Caroline Rojas - Update Background/Text/Quicklink/Button colors for new style
+   Updated: Thurs 04.12.08 - Caroline Rojas - Updated Course Search Form
+   Updated: Thurs 27.11.08 - Caroline Rojas - Adjusted link color in quicklinks for WCAG2.0 Requirements
+   Updated: Wed 27.02.08 - Caroline Rojas
+   ----------------------------------------------------*/
+
+
+/* NEW TEMPLATE STYLES
+   ----------------------------------------------------*/
+div#sidecol p { 
+	padding: 0px 15px 0px 15px;
+	color: #75440F;
+}
+
+div#sidecol hr {
+	background-color:#D8CDBA;
+	border:medium none;
+	clear:both;
+	color:#D8CDBA;
+	height:1px;
+	width:100%;
+}
+
+
+/* QUICK SEARCH FORM - Standard Search and Course Search
+   ----------------------------------------------------*/
+#sidebar-search, #sidebar-coursesearch, #sidebar-search-small {
+	border-left: none;
+	background: url(/images/search_bg_ie.gif) repeat-y;
+	padding: 20px 15px;
+	color: #fff;
+	border-bottom: 1px solid #fff;
+	min-height:80px;
+}
+
+#sidebar-search-small {
+	padding: 20px 10px 20px 15px;
+}
+
+#coursesearch-form fieldset, #search-form fieldset { 
+	width:150px; 
+}
+
+* html #sidebar-coursesearch form, * html #sidebar-search form { 
+	height:1px; 
+}
+
+#coursesearch-form fieldset p label, #search-form fieldset p label { 
+	width:auto; 
+	float:none; 
+	line-height:1;
+	margin:0; 
+	font-weight:normal; 
+	padding-left: 3px;
+	color: #fff; 
+}
+
+#coursesearch-form fieldset#submitsearch, #search-form fieldset#submitsearch { 
+	float:right;
+	position: relative;
+	margin:0;
+	top: -6.5em;
+	width:65px; 
+}
+* html #coursesearch-form fieldset#submitsearch, * html #search-form fieldset#submitsearch  { 
+	top: -5.5em; /* For IE6 */ 
+}
+*:first-child+html #coursesearch-form fieldset#submitsearch, *:first-child+html #search-form fieldset#submitsearch  { 
+	top: -5.5em; /* For IE7 */
+}
+
+#search_error_msg { 
+	background-color:#d8cdba; 
+	border:1px solid #4f331c; 
+	color:#583411; 
+	margin:0 0 5px; 
+	padding:5px; 
+}
+* html #search_error_msg {
+	height:1em; /* hack height required for IE6 - background colour disappears */
+}
+
+#error-student, #error-input, #error-type {
+	display:block;
+	outline: none;
+	color: #583411;
+	text-decoration: none;
+}
+
+/* QUICK SEARCH FORM - Standard Search and Course Search
+   ----------------------------------------------------*/
+#sidebar-search, #sidebar-coursesearch, #sidebar-search-small {
+	padding:20px 15px 5px 15px;
+}
+
+fieldset#submitsearch-small {
+	float:right;
+	position: relative;
+	margin:0;
+	top: -5.9em;
+	width:55px;
+}
+
+* html fieldset#submitsearch-small  { 
+	top: -4.9em; /* For IE6 */ 
+}
+*:first-child+html fieldset#submitsearch-small  { 
+	top: -4.9em; /* For IE7 */
+}
+
+.searchbox-small {
+	background:#E7DFD1 url(/images/search-input-bg.gif) repeat-x scroll 0 0;
+	border:1px solid #4F331C;
+	color:#644528;
+	height:13px;
+	padding:2px;
+	width:110px;
+}
+
+#sidebar-search h3, #sidebar-search-small h3 {
+	background: url(/images/quick-search.gif) no-repeat top left;
+	text-indent: -9999px; margin:0; height:20px; padding-bottom: 10px;
+}
+
+#sidebar-search-small h3 {
+	padding-bottom: 5px;
+}
+
+a.coursesearch-advanced {
+	color: #d0c3ab;
+	font-size: 0.95em;
+	text-decoration: none;
+	background: url(/images/icons/arrow4.gif) no-repeat 0px 5px;
+	padding-left: 5px;
+}
+
+a:hover.coursesearch-advanced {
+	text-decoration: underline;
+	color: #d0c3ab;
+}
+
+#sidebar-coursesearch h3 {
+	background: url(/images/home/quickcoursesearch.gif) no-repeat top left;
+	text-indent: -9999px; 
+	margin:0; 
+	height:20px; 
+	padding-bottom: 10px;
+}
+
+#sidebar-coursesearch .searchbox, #sidebar-search .searchbox, #sidebar-search-small .searchbox {	
+	width: 150px; 
+	height: 18px;
+	background:#e7dfd1 url(/images/search-input-bg.gif) scroll repeat-x;
+	border:1px solid #4f331c; 
+	padding:2px; 
+	color: #644528;
+}
+
+#sidebar-search-small .searchbox {
+	width: 107px;
+	padding:0px;
+	font-size:1em;
+	height: 16px;
+}
+
+div.coursesearch-advanced {
+	padding-top: 10px;
+}
+
+div.coursesearch-advanced a, div.coursesearch-advanced a:visited {
+	background:transparent url(/images/icons/arrow4.gif) no-repeat scroll 1px 5px;
+	color:#D0C3AB;
+	font-size:0.95em;
+	padding-left:8px;
+	text-decoration:none;
+}
+
+div.coursesearch-advanced a:hover {
+	color:#D0C3AB;
+	text-decoration:underline;
+}
+
+div#sidebar-coursesearch p, div#sidebar-search p, div#sidebar-search-small p {
+	padding:0px;
+	margin: 0px;
+} 
+
+#sidebar-search input.submit, #sidebar-coursesearch input.submit { 
+	vertical-align:top; 
+	border:1px solid #644528; 
+	padding:0; 
+	background:none;
+}
+
+.search { 
+	vertical-align:top; 
+	padding:0; 
+	background:none; 
+}
+* html .search { 
+	padding-top: 1px; 
+} /* IE6 */
+*:first-child+html .search { 
+	padding-top: 1px; 
+} /* IE7 */
+
+#DivStudentValidationDetails, #DivKeywordValidationDetails { /* On Course Search */
+	background: #D8CDBA;
+	border: 1px solid #4f331c;
+	color: #583411;
+	padding: 5px;
+	margin-bottom: 5px;
+}
+
+/* BUTTONS - STANDARD
+   ----------------------------------------------------*/
+div.sidebar-button a:link, .sidebar-button a:visited, div.sidebar-button-green a:link, .sidebar-button-green a:visited, div.sidebar-button-blue a:link, .sidebar-button-blue a:visited {
+	min-height: 22px;
+	display:block;
+	padding: 13px 10px 15px 40px;
+	font-size: 1.40em; 
+	border-bottom: 1px solid #fff;
+	font-weight:bold;
+	background: #e7dfd1 url(/images/icons/sidepanel_arrow_corporate.gif) no-repeat 10px 10px;
+	text-decoration: none;
+	color: #61380c;
+}
+
+div.sidebar-button a:hover, div.sidebar-button-green a:hover, div.sidebar-button-blue a:hover {
+	min-height: 22px;
+	display:block;
+	padding: 13px 10px 15px 40px;
+	font-size: 1.40em; 
+	border-bottom: 1px solid #fff;
+	font-weight:bold;
+	background: #fff url(/images/icons/sidepanel_arrow_corporate.gif) no-repeat 10px 10px;
+	text-decoration: none;
+	color: #61380c;
+}
+
+
+/* BUTTONS - GREEN
+   ----------------------------------------------------*/
+div.sidebar-button-green a:link, .sidebar-button-green a:visited {
+	background: #d5f0b5 url(/images/icons/sidepanel_arrow.gif) no-repeat 10px 10px;
+	color: #5b7838;
+}
+
+div.sidebar-button-green a:hover {
+	background: #fff url(/images/icons/sidepanel_arrow.gif) no-repeat 10px 10px;
+	color: #5b7838;
+}
+
+
+/* BUTTONS - BLUE
+   ----------------------------------------------------*/
+div.sidebar-button-blue a:link, .sidebar-button-blue a:visited {
+	background: #acd1c9 url(/images/icons/sidepanel_arrow_button_blue.gif) no-repeat 10px 10px;
+	color: #386578;
+}
+
+div.sidebar-button-blue a:hover {
+	background: #fff url(/images/icons/sidepanel_arrow_button_blue_over.gif) no-repeat 10px 10px;
+	color: #386578;
+}
+
+
+/* QUICKLINKS - STANDARD
+   ----------------------------------------------------*/
+div.sidebar-quicklinks, div.sidebar-quicklinks-green, div.sidebar-quicklinks-blue { 
+	/*background: #f5f2eb;*/
+	border-bottom: 1px solid #fff; 
+	padding: 10px 12px 15px 10px;
+	color: #75440F;
+}
+
+* html div.sidebar-quicklinks, div.sidebar-quicklinks-green, div.sidebar-quicklinks-blue { 
+	height: 0.01%; /*IE disappearing issue */ 
+}
+*:first-child+html div.sidebar-quicklinks, div.sidebar-quicklinks-green, div.sidebar-quicklinks-blue{ 
+ 	height: 0.01%; /*IE disappearing issue */
+}
+
+div.sidebar-quicklinks h3, div.sidebar-quicklinks-green h3, div.sidebar-quicklinks-blue h3 { 
+	margin: 0; 
+	padding: 0 0 8px 30px; 
+	background: url(/images/icons/sidepanel_arrow_corporate.gif) no-repeat; 
+	/*text-indent: 30px; */
+	font-size: 1.45em; 
+	/*height:30px; */
+	line-height: 1.2em; 
+	border-bottom: 1px solid #d8cdba; 
+	color: #61380c;
+}
+
+div.sidebar-quicklinks a:link, div.sidebar-quicklinks a:visited, div.sidebar-panel-quicklinks a:hover, div.sidebar-quicklinks-green a:link, div.sidebar-quicklinks-green a:visited, div.sidebar-panel-quicklinks-green a:hover, div.sidebar-quicklinks-blue a:link, div.sidebar-quicklinks-blue a:visited, div.sidebar-panel-quicklinks-blue a:hover { 
+	color: #75440F;
+}
+
+div.sidebar-quicklinks ul, div.sidebar-quicklinks-green ul , div.sidebar-quicklinks-blue ul {
+	margin: 15px 0px 0px 2px; 
+	padding:0; 
+}
+
+div.sidebar-quicklinks li, div.sidebar-quicklinks-green li, div.sidebar-quicklinks-blue li { 
+	list-style-type: none; 
+	background: url(/images/icons/sidebar-panel-quicklink-bullet-corporate.gif) no-repeat 5px 6px;
+	padding-left: 1.5em; 
+	padding-bottom: 0.6em; 
+}
+
+div.sidebar-quicklinks p, div.sidebar-quicklinks-green p, div.sidebar-quicklinks-blue p { 
+	color:#75440F;
+	padding-left: 7px;
+}
+
+
+/* QUICKLINKS - GREEN
+   ----------------------------------------------------*/
+div.sidebar-quicklinks-green { 
+	background: #9ac36a;
+}
+
+div.sidebar-quicklinks-green h3 { 
+	background: url(/images/icons/sidepanel_arrow_quicklinks.gif) no-repeat; 
+	border-bottom: 1px solid #a9d07b;
+	color: #fffc97; 
+}
+
+div.sidebar-quicklinks-green a:link, div.sidebar-quicklinks-green a:visited, div.sidebar-panel-quicklinks-green a:hover { 
+	color:#fff; 
+}
+
+
+div.sidebar-quicklinks-green li  { 
+	background: url(/images/icons/sidebar-panel-quicklink-bullet.gif) no-repeat 5px 6px;
+}
+
+div.sidebar-quicklinks-green p { 
+	color:#fff;
+}
+
+
+/* QUICKLINKS - BLUE
+   ----------------------------------------------------*/
+div.sidebar-quicklinks-blue { 
+	background: #74AB9e;
+}
+
+div.sidebar-quicklinks-blue h3 { 
+	background: url(/images/icons/sidepanel_arrow_quicklinks-alt.gif) no-repeat;
+	border-bottom: 1px solid #acd1c9;
+	color: #fffc97; 
+}
+
+div.sidebar-quicklinks-blue a:link, div.sidebar-quicklinks-blue a:visited, div.sidebar-panel-quicklinks-blue a:hover { 
+	color:#fff; 
+}
+
+
+div.sidebar-quicklinks-blue li  { 
+	background: url(/images/icons/sidebar-panel-quicklink-bullet.gif) no-repeat 5px 6px;
+}
+
+div.sidebar-quicklinks-blue p { 
+	color:#fff;
+}
+ 
+ 
+/* MAIN IMAGE
+   ----------------------------------------------------*/
+div.sidebar-img { 
+	border-bottom:1px solid #fff; 
+	text-align:right; 
+	line-height: 8px;
+}
+
+
+
+/* OLD TABLE BASED TEMPLATE STYLES
+   ----------------------------------------------------*/
+.nav_right
+{	
+	border-right:1px solid #FFFFFF;
+	vertical-align: top;
+}
+
+.nav_right_title_black
+{
+	font-size: 1.1em;
+	color: #666;
+	font-weight: bold;
+}
+
+table .nav_right_table {
+	padding: 0;
+	margin: 0;
+	width: 178px;
+}

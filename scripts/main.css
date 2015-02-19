@@ -1,0 +1,914 @@
+/* Swinburne Main Styles
+   
+   Updated: Fri 09.01.09 - Caroline Rojas - Added in Content Panels
+   Updated: Tue 07.10.08
+   ----------------------------------------------------*/
+
+/* OLD TEMPLATE STYLES
+   ----------------------------------------------------*/
+.main {
+	vertical-align: top; 
+	width: 100%;
+}
+
+.home {
+	vertical-align: top; 
+	width: 100%;
+}
+
+.main_intro_grey {
+	font-size: 1.3em;
+	color: #474747;
+}
+
+.main_text_black_bold {
+	font-weight: bold; 
+}
+
+.main_text_secondary_grey {
+	color: #666;
+}
+
+.main_text_secondary_grey_bold {
+	color: #666;
+	font-weight: bold; 
+}
+
+.main_title_black {
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+.main_title_grey {
+	font-size: 1.3em;
+	color: #474747;
+	font-weight: bold;
+}
+
+.main_title_ltgrey {
+	font-size: 1.3em;
+	color: #666;
+}
+
+.main_title_dkgrey {
+	font-size: 1.05em;
+	font-weight: bold;
+}
+
+
+/* LIST STYLES
+   ----------------------------------------------------*/
+.main_ul, .main_ul_2 {
+	list-style-type: none;
+	margin: 0;
+	padding:0;
+}
+
+.main_ul li, .main_ul_2 li {
+	background: url(/images/arrow7.gif) no-repeat top left;
+	padding-left: 1.3em;
+	padding-top: 0.15em;
+}
+
+.main_ul_2 li {
+	background-image: url(/images/arrow8.gif);
+	padding-left: 1.3em;
+	padding-top: 0.15em;
+}
+
+.main_dl, .main_dl_2 {
+	list-style-type: none;
+	margin: 1em 0;
+	padding: 0;
+}
+
+.main_dl dt, .main_dl_2 dt {
+	background: url(/images/arrow7.gif) no-repeat 0 -3px;
+	padding-left: 1.3em
+}
+
+.main_dl_2 dt {
+	background: url(/images/arrow8.gif) no-repeat 4px -3px;
+}
+
+
+/* OLD TABLE STYLES
+   ----------------------------------------------------*/
+table .main_table {
+	border-collapse: collapse;
+	padding: 0;
+	border-right: 1px solid #fff;
+}
+
+.main_results_table th {
+	background-color: #CCC;
+	font-weight: bold; 
+	text-align: left;
+	padding: 2px 10px 2px 5px;
+}
+
+.main_results_table td {
+	padding: 2px 10px 2px 5px;	
+	vertical-align: top;
+}
+
+.main_results_table tr.dark {
+	background-color: #EFEFEF;
+}
+
+.main_results_table tr.light {
+	background-color: #FFF;
+}
+
+.main_results_table tr.darker {
+	background-color: #CCC;
+	font-weight: bold;
+}
+
+
+/* MISCELANOUS TABLE STYLES
+   ----------------------------------------------------*/
+hr {
+	clear:both;
+	border: none;
+	background-color: #e4e4e4;
+	color: #e4e4e4;
+	height: 1px;
+	width: 100%;
+}
+
+/*.dotted_line {
+	display:block;
+	background: url('/images/main_div.gif') repeat-x bottom;
+	height:5px;
+}*/
+
+/* CMS -Is this still required? */
+.mceVisualAid {
+	border: 1px dashed #BBBBBB;
+}
+
+
+/* NEW TEMPLATE STYLES
+   ----------------------------------------------------*/
+   
+/* STANDARD TABLE FORMAT STYLES
+   ----------------------------------------------------*/
+table.standard { 
+	border:0; width:98%; 
+}
+
+table.standard th { 
+	background:#fafafa; 
+	border:1px solid #e1e1e1; 
+	border-width:1px 0; 
+	text-align:left; 
+	padding:5px; 
+}
+
+table.standard td { 
+	padding:3px 5px; 
+	vertical-align:top; 
+}
+
+table.standard tr.alt { 
+	background: #FBFBFB; 
+}
+
+table.standard tr:hover td { 
+	background:#f4f4f4; 
+}
+
+
+/* IMAGE STYLES AND LAYOUTS
+   ----------------------------------------------------*/
+img { 
+	border:0; 
+}
+
+img.flow-left { 
+	border:0; 
+	float:left; 
+	padding-right:10px; 
+	padding-bottom:15px; 
+}
+
+img.flow-right { 
+	border:0; 
+	float:right; 
+	padding-left:10px; 
+	padding-bottom:15px; 
+}
+
+div.flow-left { 
+	border:0; 
+	float:left; 
+	margin-right:20px; 
+	margin-bottom:20px; 
+}
+
+div.flow-right { 
+	border:0; 
+	float:right; 
+	margin-left:20px; 
+	margin-bottom:15px; 
+}
+
+div.display-image { 
+	border:1px solid #e4e4e4; 
+	padding:10px 15px; 
+	text-align:center; 
+	margin-bottom:20px; 
+}
+
+div.display-image p { 
+	font-weight:bold; 
+	margin:0; 
+}
+
+div.display-image img { 
+	margin:5px auto; 
+}
+
+.zoom { 
+	display:block; 
+	font-size: .90em; 
+	padding-left: 20px; 
+	background: url(/images/icons/image-zoom.gif) scroll no-repeat left bottom; 
+	text-align:left; 
+}
+
+div.display-image-simple { 
+	border:0; 
+}
+
+
+/* FIRST LEVEL MENU STYLES
+   ----------------------------------------------------*/
+div.panels ul.first-level-menu { /* For panels only no indent */
+	padding:0; 
+}
+
+ul.first-level-menu { 
+	border-top:1px solid #f1f1f1; 
+	margin:10px 0 20px; 
+	padding:0; 
+}
+
+ul.first-level-menu li { 
+	margin:0; 
+	list-style:none; 
+	border-bottom:1px solid #f1f1f1; 
+}
+
+ul.first-level-menu li ul,
+ul.first-level-menu li ul li { 
+	list-style-type:square; 
+	border:none;
+}
+
+ul.first-level-menu a  { 
+	padding:5px 0 5px 20px; 
+	text-decoration:none; 
+	font-size:1.2em; 
+	display:block; 
+	background:transparent url(/images/icons/bullet-red.gif) scroll no-repeat 11px 10px; 
+}
+
+ul.first-level-menu a:hover { 
+	background-color:#f9f9f9; 
+	text-decoration:none;
+}
+
+ul.first-level-menu a span { 
+	display:block; 
+	font-size:.9em; 
+	padding:3px 0; 
+	color:#555; 
+	text-decoration:none; 
+}
+
+ul.first-level-menu a:hover strong { 
+	text-decoration:underline; 
+}
+
+
+/* FLOATED BULLET POINT STYLES
+   ----------------------------------------------------*/
+div.bullet-points { 
+	background:#fafafa; 
+	padding:5px 10px; 
+	font-size:.9em; 
+	margin-bottom:15px; 
+	width:200px; 
+}
+
+div.bullet-points ul { 
+	list-style-image: url(/images/icons/bullet-red.gif); 
+	padding-left:0; 
+	margin:0 0 1em 20px;
+}
+
+div.bullet-points p { 
+	margin:0 0 1em; 
+}
+
+
+/* PODCAST EPISODES STYLES
+   ----------------------------------------------------*/
+ul.podcast-episodes { 
+	list-style:none; 
+	margin:0; 
+	padding:0; 
+	border-top:1px solid #f0f0f0;
+}
+
+ul.podcast-episodes li { 
+	margin:0 0 2px; 
+	padding:10px; 
+	border-bottom:1px solid #f0f0f0; 
+}
+
+ul.podcast-episodes li.alt { 
+	background:#fbfbfb; 
+}
+
+ul.podcast-episodes li img { 
+	float:left; 
+}
+
+ul.podcast-episodes li div { 
+	margin-left:70px; 
+	padding-left:8px; 
+	background:transparent url(/images/icons/bullet-red.gif) scroll no-repeat left 7px; 
+	font-size:.95em; 
+}
+
+ul.podcast-episodes li ul,
+ul.podcast-episodes li ul li,
+ul.podcast-episodes li h3 { 
+	list-style:none; 
+	margin:0; 
+	border:0; 
+	padding:0; 
+	line-height:1.2em; 
+}
+
+ul.podcast-episodes li h3 { 
+	font-size:1.2em; 
+}
+
+ul.podcast-episodes li h3 a { 
+	text-decoration:none; 
+}
+
+ul.podcast-episodes li h3 a:hover { 
+	text-decoration:underline; 
+}
+
+ul.podcast-episodes li p { 
+	margin:0 0 1em; 
+}
+
+ul.podcast-episodes li dl,
+ul.podcast-episodes li dl li { 
+	line-height:1.5em; 
+}
+
+ul.podcast-episodes li dt { 
+	float: left; 
+	width:9em; 
+	display:block; 
+	font-weight:bold; 
+}
+
+ul.podcast-episodes li dd { 
+	margin-left:10em; 
+}
+
+
+/* PULLQUOTE  STYLES
+   ----------------------------------------------------*/
+blockquote.pullquote { 
+	margin:10px 30px; 
+	background:#fafafa url(/images/icons/pullquote-bottom.gif) scroll no-repeat right bottom; 
+}
+
+blockquote.pullquote p { 
+	padding:20px 50px; 
+	background:transparent url(/images/icons/pullquote-top.gif) scroll no-repeat left top; 
+	font-weight:bold; 
+	font-style:italic; 
+	line-height:1.5em; 
+	color: #2f2f2f;
+	font-size: 1.2em;
+}
+
+
+/* PULLQUOTE HIGHLIGHT STYLES
+   ----------------------------------------------------*/
+blockquote.highlight { 
+	margin:10px 30px; 
+	background:#f8f8f8; 
+}
+
+blockquote.highlight p { 
+	padding:20px 50px; 
+	font-weight:bold; 
+	line-height:1.5em; 
+}
+
+
+/* DEFAULT LIST
+   ----------------------------------------------------*/
+ul { 
+	list-style-type:square; 
+}
+
+ul li { }
+
+
+/* NUMBERED LIST
+   ----------------------------------------------------*/
+ul.numbered { 
+	list-style-type:decimal; 
+}
+
+/* LINK LIST STYLES
+   ----------------------------------------------------*/
+ul.bulletpoints li {
+	list-style:none; 
+	background:transparent url(http://www.swinburne.edu.au/images/icons/bullet-red.gif) no-repeat scroll 1px 6px;
+	padding-left:10px;
+}
+
+ul.bulletpoints-2col {
+	list-style-type:none;
+}
+
+ul.bulletpoints-2col li {
+	background:transparent url(http://www.swinburne.edu.au/images/icons/bullet-red.gif) no-repeat scroll 1px 6px;
+	float:left;
+	list-style-image:none;
+	margin:0px;
+	padding-left:10px;
+	padding-right:2px;
+	width:45%;
+}
+
+ul.divided { 
+	padding-bottom: 10px; 
+	border-bottom:1px solid #f0f0f0; 
+}
+
+
+/* DOCUMENT DOWNLOADS
+   ----------------------------------------------------*/
+div.panels ul.downloadable-documents { /* For panels only no indent */
+	padding:0; 
+}   
+   
+ul.downloadable-documents { 
+	list-style:none; 
+	margin:0; 
+	padding:0; 
+	border-top:1px solid #f0f0f0;
+}
+
+ul.downloadable-documents li { 
+	margin:0 0 2px; 
+	padding:10px; 
+	border-bottom:1px solid #f0f0f0; 
+	clear:both; 
+	min-height: 40px;  
+}
+* html ul.downloadable-documents li { 
+	height: 40px;  
+} /*Set height for IE6 */
+
+ul.downloadable-documents li.alt { 
+	background:#fbfbfb; 
+}
+
+ul.downloadable-documents li img { 
+	float:left; 
+}
+
+ul.downloadable-documents li div { 
+	margin-left:50px; 
+	padding-left:8px; 
+	background:transparent url(/images/icons/bullet-red.gif) scroll no-repeat left 7px; 
+	font-size:.95em; 
+}
+
+ul.downloadable-documents li ul,
+ul.downloadable-documents li ul li,
+ul.downloadable-documents li h3 { 
+	list-style:none; 
+	margin:0; border:0; 
+	padding:0; 
+	line-height:1.2em; 
+}
+
+ul.downloadable-documents li h3 { 
+	font-size:1.2em; 
+}
+
+ul.downloadable-documents li h3 a { 
+	text-decoration:none; 
+}
+
+ul.downloadable-documents li h3 a:hover { 
+	text-decoration:underline; 
+}
+
+ul.downloadable-documents li p { 
+	margin:0 0 1em; 
+}
+
+ul.downloadable-documents li dl,
+ul.downloadable-documents li dl li { 
+	line-height:1.5em; 
+}
+
+ul.downloadable-documents li dt { 
+	float: left; 
+	width:9em; 
+	display:block; 
+	font-weight:bold; 
+}
+
+ul.downloadable-documents li dd { 
+	margin-left:10em; 
+}
+
+
+/* DOCUMENT DOWNLOADS - SMALL
+   ----------------------------------------------------*/
+ul.downloadable-documents-small { 
+	list-style:none; 
+	margin:0; 
+	padding:0; 
+	border-top:1px solid #f0f0f0; 
+}
+
+ul.downloadable-documents-small li { 
+	margin:0 0 2px; 
+	padding:10px; 
+	border-bottom:1px solid #f0f0f0; 
+	clear:both; 
+	min-height: 20px;  
+}
+* html ul.downloadable-documents-small li { 
+	height: 20px;  
+} /*Set height for IE6 */
+
+ul.downloadable-documents-small li.alt { 
+	background:#fbfbfb; 
+}
+
+ul.downloadable-documents-small li img { 
+	float:left; padding: 3px 0 0 0; 
+}
+
+ul.downloadable-documents-small li div { 
+	margin-left:30px; 
+	padding-left:8px; 
+	background:transparent url(/images/icons/bullet-red.gif) scroll no-repeat left 7px; 
+	font-size:.95em; 
+}
+
+ul.downloadable-documents-small li ul,
+ul.downloadable-documents-small li ul li,
+ul.downloadable-documents-small li h4 { 
+	list-style:none; 
+	margin:0; 
+	border:0; 
+	padding:0; 
+	line-height:1.4em; 
+}
+
+ul.downloadable-documents-small li h4 { 
+	font-size:1.1em; 
+}
+
+ul.downloadable-documents-small li h4 a { 
+	text-decoration:none; 
+}
+
+ul.downloadable-documents-small li h4 a:hover { 
+	text-decoration:underline; 
+}
+
+ul.downloadable-documents-small li p { 
+	margin:0 0 1em; 
+}
+
+ul.downloadable-documents-small li dl,
+ul.downloadable-documents-small li dl li { 
+	line-height:1.5em; 
+}
+
+ul.downloadable-documents-small li dt { 
+	float: left; 
+	width:9em; 
+	display:block; 
+	font-weight:bold; 
+}
+
+ul.downloadable-documents-small li dd { 
+	margin-left:10em; 
+}
+
+
+/* BULLETIN
+   ----------------------------------------------------*/
+div.bulletin-latest { 
+	background:#FBFBFB; 
+	margin:10px 30px; 
+	padding:20px; 
+	border:1px solid #e1e1e1; 
+	border-width:1px 0; 
+}
+
+div.bulletin-latest h2 { 
+	margin:0; 
+}
+
+div.bulletin-latest img { 
+	float:left; 
+	margin-right:20px; 
+}
+
+div.bulletin-latest strong { 
+	margin-right:20px; 
+}
+
+div.bulletin-latest a { 
+	text-decoration:none; 
+}
+
+div.bulletin-latest a:hover { 
+	text-decoration:underline; 
+}
+
+div.bulletin-latest dl { 
+	line-height:1.5em; 
+}
+
+div.bulletin-latest dt { 
+	float: left; 
+	width:9em; 
+	display:block; 
+	font-weight:bold; 
+}
+
+div.bulletin-latest dd { 
+	margin-left:10em; 
+}
+
+
+/* EVENTS
+   ----------------------------------------------------*/
+dl.event-details { 
+	margin:10px; 
+	padding:10px; 
+	border:0px solid #e1e1e1; 
+}
+
+dl.event-details dt { 
+	float: left; 
+	width:9em; 
+	display:block; 
+	font-weight:bold; 
+	padding-bottom:7px; 
+}
+
+dl.event-details dd { 
+	margin-left:10em; 
+	padding-bottom:7px; 
+}
+
+dl.event-details dd p { 
+	margin:0 0 1em; 
+}
+
+dl.alt { 
+	background:#fafafa; 
+	border-width:1px 0; 
+}
+
+
+/* CONTENT PANELS
+   ----------------------------------------------------*/
+div.panels {
+	float:left;
+	width: 46%;
+	margin: 0 20px 8px 0; 
+}
+
+* html div.panels { 
+	width: 44%;
+}
+
+div.panels h2 {
+	margin: 18px 0 14px 0;
+}
+
+div.panels p {
+	line-height: normal;
+}
+
+div.panels div.all {
+	padding: 10px 0 5px 0;
+}
+
+div.panels div.all a {
+	text-decoration: none;
+	background:transparent url(/images/icons/bullet-red-all.gif) no-repeat scroll 1px 6px;
+	padding: 0px 0 0px 12px;
+	font-weight: bold;
+}
+
+div.panels div.all a:hover {
+	text-decoration: underline;
+}
+
+div.panels ul {
+	margin: 0;
+	padding: 0 0 0 16px;
+}
+
+
+/* LINK LISTS - (Link, Descriptions)
+   ----------------------------------------------------*/
+div.link-list { 
+	padding: 0;
+}   
+   
+div.link-list ul { 
+	margin: 0; 
+	padding: 0;
+}
+
+div.link-list ul li {
+	list-style: none; 
+	background: transparent url(/images/icons/bullet-red.gif) no-repeat scroll 1px 5px;
+	padding: 0 0 4px 12px; 
+}
+
+div.link-list ul li p {
+	margin: 0;
+}
+
+
+/* ICON LISTS (Icon, Link, Description)
+   ----------------------------------------------------*/
+div.icon-list ul {
+	margin: 0;
+	padding: 0;
+}
+
+div.icon-list ul li {
+	list-style-type: none;
+	padding: 0 0 15px 0;
+	min-height: 55px;
+}
+
+* html div.icon-list ul li {
+	height: 55px;
+}
+
+div.icon-list ul li div {
+	margin-left: 65px;
+	padding: 0;
+}
+
+div.icon-list ul li p {
+	margin: 1px 0 1px 0; 
+}
+
+div.icon-list ul li p strong {
+	color: #3f3f3f;
+}
+
+div.icon-list ul li img {
+	float:left;
+	vertical-align:top;
+	margin: 2px 8px 0 0;
+}
+
+div.icon-list ul li img.border {
+	border: 1px solid #d4d4d4;
+	padding: 2px;
+	margin: 0 8px 0 0;
+}
+
+div.icon-list div.all {
+	margin-top: -8px;
+}
+
+/* Bulletpoints within icon list */
+div.icon-list ul li ul.bulletpoints li {
+	list-style:none; 
+	background:transparent url(http://www.swinburne.edu.au/images/icons/bullet-red.gif) no-repeat scroll 1px 6px;
+	min-height: 2px;
+	padding: 0 0 4px 10px;
+}
+
+
+/* DESCRIPTION LIST (Heading, Description, Link)
+   ----------------------------------------------------*/
+div.desc-list { 
+	padding: 0;
+}   
+   
+div.desc-list ul { 
+	margin: 0; 
+	padding: 0;
+}
+
+div.desc-list ul li {
+	list-style: none; 
+	padding: 0 0 17px 0px; 
+}
+
+div.desc-list ul li p {
+	margin: 0;
+}   
+
+
+/* PROMOTIONAL MESSAGE
+   ----------------------------------------------------*/
+div.promo-message {
+	background:#545454;
+	padding: 12px;
+	color: #fff;
+	font-size:1.1em;
+}
+
+div.promo-message p {
+	margin:0;
+	padding:0;
+	line-height: 1.4em;
+}
+
+div.promo-message a, div.promo-message a:link, div.promo-message a:visited, div.promo-message a:hover  {
+	color: #fff;
+}
+
+/* TOP STYLE
+   ----------------------------------------------------*/
+div.top {
+	background: url(/images/icons/top.gif) no-repeat left 3px;
+	padding-left: 12px;
+	font-size: 0.95em;
+}
+
+
+/* BREADCRUMBS STYLES
+   ----------------------------------------------------*/
+#breadcrumbs { 
+	margin: 0px;
+	padding: 0px; 
+	color: #999;
+}
+
+#breadcrumbs ul {
+	/*border-top: 1px solid #e4e4e4;
+	border-bottom: 1px solid #e4e4e4;*/
+	list-style: none;
+	margin: 0px 0 0 0;
+	/*padding: 5px 0px 5px 0px;*/
+	padding: 5px 0px 3px 0px;
+	font-size: 0.95em;
+}
+
+#breadcrumbs li {
+	margin: 0px;
+	padding: 0px 10px 0px 0px;
+	display:inline;
+}
+
+#breadcrumbs li a {
+	text-decoration: none;
+}
+
+#breadcrumbs li a:hover {
+	text-decoration: underline;
+}
+
+/* EMAIL PRINT TOOLS
+   ----------------------------------------------------*/
+.swin-tools {
+	text-align: right;
+	padding: 2px; 
+	border-bottom: 1px solid #EDEDED; 
+	font-size:0.95em; 
+	vertical-align: middle;
+}
+
+.swin-tools img {
+	margin-right: 10px;
+}
+   

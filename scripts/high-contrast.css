@@ -1,0 +1,159 @@
+/* Swinburne High Contrast Style Sheet - Main Templates
+  
+   Updated: Thurs 27.11.08 Caroline Rojas
+   ----------------------------------------------------*/
+
+body {
+	color:#565656;
+}
+
+h4 {
+	color:#444444;
+}   
+
+/* BANNERS 
+   ----------------------------------------------------*/
+#banners {
+	background: #2f2f2f url(http://www.swinburne.edu.au/images/banners/banner_corporate_left.gif) no-repeat;
+}
+
+#banners p#pagetitle {
+	background: none;	
+}
+
+#banners p#pagetitle span {
+	display:none;
+	/*display:block;*/
+	color: #fff;
+	padding: 15px 0 0 5px;
+	font-size: 1.85em;
+	font-weight: bold;
+}
+	
+#banners div {
+	background: none;
+}	
+
+#column2 #banners div {
+	background: none;
+}
+
+/* BANNERS - VERSION 3
+   ----------------------------------------------------*/
+#banner, #banner-small {
+	background: #2f2f2f url(http://www.swinburne.edu.au/images/banners/banner_corporate_left.gif) no-repeat;
+}
+
+#banner p#pagetitle, #banner-small p#pagetitle {
+	background: none;
+	color: #fff;
+	padding: 15px 0 0 5px;
+	font-size: 1.85em;
+	font-weight: bold;
+}
+
+#banner p#pagetitle span, #banner-small p#pagetitle span {
+	display:none;	
+}
+	
+#banner div {
+	background: none;
+}	
+
+#column2 #banner div {
+	background: none;
+}
+
+/* LINK STYLES
+   ----------------------------------------------------*/
+a, a:link, a:visited, a:hover {
+	color: #AD1601;
+}
+
+/* BULLETPOINTS 
+   ----------------------------------------------------*/
+div.bullet-points { 
+	color: #565656;
+}
+
+ul.bulletpoints li {
+	background:transparent url(/images/icons/bullet-red-highcontrast.gif) no-repeat scroll 1px 6px;
+}
+
+/* FIRST LEVEL MENU STYLES
+   ----------------------------------------------------*/
+ul.first-level-menu a {
+	background:transparent url(/images/icons/bullet-red-highcontrast.gif) no-repeat scroll 11px 10px;
+}
+
+/* FLOATED BULLET POINT STYLES
+   ----------------------------------------------------*/
+div.bullet-points ul {
+	list-style-image:url(/images/icons/bullet-red-highcontrast.gif);
+}
+
+/* PODCAST EPISODES STYLES
+   ----------------------------------------------------*/
+ul.podcast-episodes li div {
+	background:transparent url(/images/icons/bullet-red-highcontrast.gif) no-repeat scroll left 7px;
+}
+
+ul.podcast-episodes { 
+	color: #575757;
+}
+
+/* DOCUMENT DOWNLOADS
+   ----------------------------------------------------*/
+ul.downloadable-documents li div {
+	background:transparent url(/images/icons/bullet-red-highcontrast.gif) no-repeat scroll left 7px;
+}
+
+/* PULLQUOTE  STYLES
+   ----------------------------------------------------*/
+blockquote.pullquote { 
+	color: #565656; 
+}
+
+/* PULLQUOTE HIGHLIGHT STYLES
+   ----------------------------------------------------*/
+blockquote.highlight { 
+	color: #565656; 
+}
+
+/* STANDARD TABLE FORMAT STYLES
+   ----------------------------------------------------*/
+table.standard th, table.standard tr.alt { 
+	color: #565656;
+}
+
+/* QUICK SEARCH FORM - Standard Search and Course Search
+   ----------------------------------------------------*/
+a.coursesearch-advanced, a:hover.coursesearch-advanced {
+	color: #eee9df;
+}
+
+/* QUICKLINKS - STANDARD
+   ----------------------------------------------------*/
+div.sidebar-quicklinks a:link, div.sidebar-quicklinks a:visited, div.sidebar-panel-quicklinks a:hover { 
+	color:#5c4227; 
+}
+
+/* FORMS - MY FORMS
+   ----------------------------------------------------*/
+#myforms h2 {
+	color:#000000;
+}
+
+#myforms label strong {
+	color:#AD1601;
+}
+
+/* FOOTER STYLES
+   ----------------------------------------------------*/
+#footer, #foot ul li {
+	color: #505050;
+}
+
+#foot ul li a {
+	color: #494949;
+}

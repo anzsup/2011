@@ -1,0 +1,608 @@
+/* Swinburne Default Styles
+   
+   Updated: Wed   13.10.10 - Ramiro Rosales - Fixed headings line height when resized
+   Updated: Tue   28.06.10 - Caroline Rojas - Added in banner version 4 styles
+   Updated: Tue   02.02.09 - Caroline Rojas - Added in banner search box styles
+   Updated: Fri   16.01.09 - Caroline Rojas - Added in new Banner Style and Small Sidebar
+   Updated: Thurs 27.11.08 - Caroline Rojas - Adjusted Footer/Link color for WCAG2.0 Requirements
+   Updated: Tue   07.10.08
+   
+   ----------------------------------------------------*/
+
+body {
+	margin:0;
+	font-size: 0.75em;
+	font-family: Arial,Geneva,Helvetica;
+	color: #666;
+}
+
+/* Quirks mode problem - Table cells don't inherit the body font size. */
+table {
+	font-size: 1em;
+}
+
+#main {
+	background: #FFC648 url(http://www.swinburne.edu.au/images/backgrounds/corporate.gif) no-repeat 986px 0px;
+}
+
+
+#container {
+	width: 987px;
+	background: #fff;
+}
+
+#wrapper {
+	width: 987px;
+	background: #fff url(http://www.swinburne.edu.au/images/wrapper-background.gif) scroll repeat-y;
+}
+
+#wrapper-sidebar {
+	width: 987px;
+	background: #fff url(http://www.swinburne.edu.au/images/wrapper-sidebar-background.gif) scroll repeat-y;
+}
+
+#wrapper-sidebar-small {
+	width: 987px;
+	background: #fff url(http://www.swinburne.edu.au/images/wrapper-sidebar-small-background.gif) scroll repeat-y;
+}
+
+
+/* HEADING STYLES
+   ----------------------------------------------------*/
+h1 {
+	font-size: 1.7em;
+	font-weight: normal;  
+}
+
+h2 {
+	font-size: 1.2em;
+	/*line-height:17px;*/
+	line-height:1.2em;
+	color:#000;
+	font-weight: bold; 
+}
+
+h3 {
+    font-size:12px;
+	/*line-height:15px;*/
+	line-height:1.2em;
+	color:#000;
+	font-weight: bold; 
+}
+
+h4 {
+    font-size:12px;
+	color:#666;
+	/*line-height:15px;*/
+	line-height:1.2em;
+	font-weight: bold; 
+	margin-bottom: 6px;
+}
+
+p{
+	line-height:1.2em;
+}
+
+
+/* LINK STYLES
+   ----------------------------------------------------*/
+a, a:link, a:visited, a:hover {
+	color: #D71B00;
+	text-decoration: underline;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+
+/* FOOTER STYLES - TABLE VERSION (To be removed) (Coursefinder|My.Swinburne)
+   ----------------------------------------------------*/
+.footer, .footer2 {
+	font-size: 0.95em;
+	text-decoration: none;
+	padding: 6px 6px 1px 6px;
+}
+
+.footer2 {
+	padding: 0px 6px 6px 6px;
+}
+
+.footertable {
+	border-top: 1px solid #fff;
+}
+
+.footertable2 {
+	border-top: none;
+}
+
+
+/* FOOTER STYLES
+   ----------------------------------------------------*/
+#footer {
+	color: #7d7d7d;
+ 	padding: 0px;
+ 	margin: 40px 0px 0px 0px;
+	padding: 0px;
+	height: 52px;
+	background-color: #eee;
+	min-width: 987px
+}
+
+#foot {
+	padding: 10px 5px 6px 5px;
+	background: #eee;
+	width: 971px;
+}
+* html #foot {
+	margin-left: 5px
+}
+
+#foot ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	width: 100%;
+}
+
+#foot ul li {
+	float: left;
+	margin: 0;
+	color: #646464;
+	padding: 2px 3px 2px 4px;
+	height: 1em;
+	line-height: 1em;
+	border-right: 1px solid #b0b0b0;
+	font-size: .9em;
+}
+
+#foot ul li a {
+	color: #555;
+	text-decoration:underline;
+}
+
+#foot ul li.last {
+	border: none;
+}
+
+
+/* OLD PAGE BANNER STYLES
+   ----------------------------------------------------*/
+#header {
+	overflow: hidden;
+	border-bottom: 1px solid #FFF;
+	border-right: 1px solid #FFF;
+	height: 113px;
+}
+
+#header.small { 
+	height: 73px;
+}
+
+#header .left { 
+	float: left; 
+	width: 385px; 
+	margin-right: -385px; 
+	position: relative 
+}
+
+#header .right { 
+	float: right; 
+}
+
+
+/* PAGE LAYOUT STYLES
+   TWO/THREE COLUMN LAYOUT (table free)
+   ----------------------------------------------------*/
+div#column { 
+	background: url(http://www.swinburne.edu.au/images/left-nav-background.gif) no-repeat bottom left; 
+	border-right: 1px solid #fff;
+}
+
+div#column1 { 
+	margin: 0; 
+	padding: 0; 
+	float: left; 
+	width: 731px; 
+}
+
+#wrapper-sidebar-small div#column1 {
+	width: 780px; 
+}
+
+div#column2 { 
+	margin: 0; 
+	padding: 0; 
+	float:left; 
+	width: 255px;
+}
+
+#wrapper-sidebar-small div#column2 {
+	width: 206px; 
+}
+
+div#navcol { 
+	padding: 0; 
+	width: 184px; 
+	float: left; 
+}
+
+div#content-col { 
+	margin-left: 15px; 
+	padding:12px 0 40px; 
+	float:left; 
+	width: 765px; 
+}
+/* ie hack required to ensure <table width="100%"> does not break floats */
+/*hide from IE mac\*/
+* html #content-col { 
+	height:1%;
+}
+/*end hide*/ 
+
+
+/* SIDEBAR
+   ----------------------------------------------------*/
+div#content-col-sidebar { 
+	margin-left: 15px; 
+	padding:12px 0 40px; 
+	float:left; 
+	width: 520px; 
+}
+
+div#sidecol { 
+	width: 255px; 
+	float: right; 
+	padding-bottom:30px; 
+	border-top:1px solid #fff;
+}
+
+/* SIDEBAR - SMALL
+   ----------------------------------------------------*/
+#wrapper-sidebar-small div#content-col-sidebar { 
+	margin-left: 15px; 
+	padding:12px 0 40px; 
+	float:left; 
+	width: 565px; 
+}
+
+#wrapper-sidebar-small div#sidecol { 
+	width: 206px; 
+	float: right; 
+	padding-bottom:30px; 
+	border-top:1px solid #fff;
+}
+
+div#column2 div#sidecol { 
+	border-top: none; 
+}
+
+.clear { 
+	clear: both; 
+	display: block; 
+	height: 1px; 
+	overflow: hidden; 
+	margin: 0; 
+	padding: 0; 
+}
+
+
+/* BANNER STYLES
+   ----------------------------------------------------*/
+#banners { 
+	background:#D8CDBB url(/images/banners/banner_corporate_left.gif) no-repeat;
+}
+
+#banners p { 
+	margin:0; 
+}
+
+#banners p span { 
+	display:none; 
+}
+
+#banners p { 
+	width:500px; 
+	height:48px; 
+	margin:6px 0 0 194px;
+}
+
+#banners p#banner-logo { 
+	background:transparent url(/images/banners/swinburne_logo.gif) no-repeat; 
+	width:179px; 
+	height:91px; 
+	margin:0 0 0 94px; 
+}
+
+#banners div { 
+	background:transparent url(/images/banners/banner_corporate_right.gif) scroll no-repeat right top; 
+}
+
+#column2 #banners div { 
+	background:transparent url(/images/banners/research/banner_research_right.gif) scroll no-repeat right top;
+	margin-right:255px; 
+}
+
+#column1 #banners div { 
+	border-right: 1px solid #fff; 
+}
+
+
+/* LARGE/SMALL/SEARCH BANNERS (NEW)
+   ----------------------------------------------------*/
+#banner { 
+	background: #D8CDBB url(/images/banners/banner_corporate_left.gif) no-repeat;
+	height: 144px;
+	color:#393939;
+}
+
+#banner-small { 
+	background:#D8CDBB url(/images/banners/banner_corporate_left.gif) no-repeat;
+	height: 91px;
+}
+
+#banner p { 
+	margin:0; 
+}
+
+#banner-small p { 
+	margin:0; 
+	height:48px; 
+}
+
+#banner p#pagetitle, #banner-small p#pagetitle {
+	width: 435px;
+	position: relative;
+	/*color:#fff;*/
+	/*font-weight: bold;*/
+	font-size: 0.8em;
+	padding: 0;
+}
+
+#banner p#pagetitle {
+	float:left;
+	margin-top: 97px;
+	margin-left: -80px;
+	padding: 0px 0 0 0px;
+}
+
+#banner-small p#pagetitle {
+	float:left;
+	padding: 15px 0 0 12px;
+}
+
+/*Banner - Version 4 */
+#banner-small div#page-title, #banner-small-search div#page-title {
+	float:left;
+	font-size:1.4em;
+	height:78px;
+	padding:30px 0 0 20px;
+}
+
+/* Maximum Banner width:500px, height:48px (one line) */
+#banner p#pagetitle span {
+	background: url(/images/banners/banner-swinburne.gif) no-repeat;
+	position: absolute;
+	width: 500px;
+	height: 45px;
+}
+
+/* Maximum Banner width:445px, height:68px (two lines) */
+#banner-small p#pagetitle span {
+	background: url(/images/banners/banner-swinburne.gif) no-repeat;
+	position: absolute;
+	width: 453px;
+	height: 68px;
+}
+
+/*Banner - Version 4 */
+#banner-small div#page-title span, #banner-small-search div#page-title span {
+	background:url(/images/banners/banner-swinburne.gif) no-repeat scroll 0 0 transparent;
+	height:68px;
+	position:absolute;
+	width:453px;
+}
+
+#banner-small p#search, #banner-small div#search  {
+	float:right;
+	width: 206px;
+	background: #D8CDBA;
+	height:91px; 
+	color: #fff;
+}
+
+#banner-small p#banner-logo, #banner p#banner-logo { 
+	float:left;
+	width:179px; 
+	padding:0 0 0 94px; 
+}
+
+/*Banner - Version 4 */
+#banner-small div#banner-logo, #banner-small-search div#banner-logo {
+	float:left;
+	padding:0 0 0 15px;
+	width:169px;
+}
+
+#column1 #banner, #column1 #banner-small { 
+	border-right: 1px solid #fff; 
+}
+
+#banner div { 
+	background:transparent url(/images/banners/banner_corporate_right.gif) scroll no-repeat right top;
+	height: 144px;
+}
+
+#column2 #banner div { 
+	background:transparent url(/images/banners/banner_corporate_right.gif) scroll no-repeat right top;
+	margin-right:255px; 
+}
+
+/* BANNER SEARCH BOX
+   ----------------------------------------------------*/
+#banner-small #search { 
+	float:right; 
+	text-align:left; 
+	width:206px; 
+	height:91px; 
+	overflow:hidden; 
+}
+
+#search-switcher { 
+	list-style:none; 
+	margin:0 0 5px 0; 
+	padding:0; 
+	height:24px; 
+}
+
+#search-switcher li { 
+	display:block; 
+	float:left; 
+	margin:0; 
+	padding:0; 
+	height:24px; 
+}
+
+#search-switcher li.csearch { 
+	width:115px; 
+}
+
+#search-switcher li.ssearch { 
+	width:91px; 
+}
+
+#search-switcher li a { 
+	color:#fff; 
+	font-size: 0.95em; 
+	font-weight:bold; 
+	text-decoration:none; 
+	height:24px; 
+	display:block; 
+}
+
+#search-switcher li a:focus { 
+	outline:none; 
+}
+
+#site-search { 
+	display:none; 
+}
+
+#banner-small .search-tab h3 { 
+	display:none; 
+}
+
+#banner-small .search-tab form { 
+	margin-left:14px; 
+	padding-top: 2px; 
+}
+
+#banner-small .search-tab .searchbox { 
+	width:119px; 
+	border:none; 
+	padding:1px; 
+	font-size:1em; 
+	font-family: Arial, Helvetica, sans-serif; 
+	color: #333; 
+}
+
+/*body:first-of-type #banner-small .search-tab .searchbox { /* Safari Chrome */
+	/*padding:1px;
+	height: 15px;
+}*/
+
+#banner-small .search-tab fieldset { 
+	font-size:.9em; 
+	margin:0; 
+	padding:0; 
+	margin-top:3px; 
+}
+
+#banner-small .search-tab fieldset label { 
+	width:100%; 
+	padding:0; 
+	margin:0; 
+	font-weight:normal; 
+	height:16px; 
+	overflow:hidden; 
+}
+
+#banner-small .search-tab fieldset label input { 
+	vertical-align:middle; 
+	margin:0; 
+	padding:0; 
+	margin-right:4px; 
+}
+
+#banner-small .submit-button { 
+	float:right; 
+	position:relative; 
+	top:-54px; 
+	margin-right:34px; 
+}
+
+/*body:first-of-type #banner-small .submit-button { /* Safari Chrome */
+	/*top:-54px; 
+}*/
+
+* html body #banner-small .submit-button { /* IE 6 */
+	top:-55px; 
+	margin-right:17px; 
+}
+
+*:first-child+html #banner-small .submit-button {  /* IE 7 */
+	top:-55px; 
+}
+
+#search-switcher li a span { 
+	position: absolute; 
+	height: 24px;
+}
+
+#search-switcher li.ssearch a.selected span { 
+	width: 91px; 
+}
+
+#search-switcher li.ssearch a span { 
+	width: 91px; 
+}
+
+#search-switcher li.csearch a.selected span { 
+	width: 115px; 
+}
+
+#search-switcher li.csearch a span { 
+	width: 115px; 
+}
+
+#search form fieldset label { 
+	float:none; 
+	font-weight:normal; 
+	vertical-align: top;
+} 
+
+* html body #banner-small #search form fieldset label { /* IE 6 */
+	float:none; 
+	vertical-align: top; 
+	font-weight:normal;
+}
+
+#banner-small #search form fieldset input { 
+	margin-top: 1px; 
+	margin-left: -1px;
+}
+
+* html body #banner-small #search form fieldset input { /* IE 6 */
+	margin-top: -3px; 
+	margin-left: -5px;
+}
+
+*:first-child+html #banner-small #search form fieldset input { /* IE 7 */
+	margin-top: -3px; 
+	margin-left: -5px; 
+}
+
+.footer-email {
+	display: none;
+}

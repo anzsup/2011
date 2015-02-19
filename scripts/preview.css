@@ -1,0 +1,68 @@
+.bittip iframe {
+    width:320px !important;
+    height:95px !important;
+}
+
+span.bittip{ 
+	padding: 0 !important; 
+	display:inline !important;
+	position: absolute;
+} 
+
+a:hover span.bittip span span{
+  display: block !important;
+}
+
+span.bittip span{	
+	position: absolute !important;	
+	text-decoration: none !important;	
+}
+
+span.bittip span span{
+    display: none !important;  
+    position: absolute !important;
+    z-index: 10000000000 !important;
+    top: .85em !important;	
+    right:-130px !important;	
+}
+
+#bitly_top_stripe {
+    background-color:#333333;
+    color:#FFFFFF;
+    height:30px;
+    margin:0;
+    position:absolute;
+    top:0;
+    width:100%;
+}
+
+.bitly_body {
+    margin-top:30px !important;
+}
+
+.bitly_shortened {
+    position:absolute !important;
+    border:1px solid #999 !important;
+    z-index:100000000000 !important;
+    padding:10px !important;
+    background:#333 !important;
+    color:#fff !important;
+    text-align:left !important;
+    font-size:12px !important;
+    line-height:1em !important;
+    
+}
+
+.bitly_shortened_span {
+    font-size:12px !important;
+    line-height:1em !important;
+    color:#c93 !important;
+}
+
+.bitly_shortened_x {
+    position:absolute !important;
+    top:0 !important;
+    right: 5px !important;
+    color: #fff !important;
+    cursor: pointer !important;
+}

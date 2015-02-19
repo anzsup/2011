@@ -1,0 +1,21 @@
+.style1 {color: #FFFFFF}
+.style7 {
+	font-size: 16px;
+	color: #FFFFFF;
+	width: 100%;
+	font-weight: bold;
+}
+.style10 {
+	font-size: 24px;
+	color: #660033;
+}
+.style15 {font-size: 48px}
+.style16 {font-size: 14px}
+.style17 {font-size: 14px; color: #FFFFFF; width: 100%; font-weight: bold; }
+.style28 {font-family: Georgia, "Times New Roman", Times, serif}
+
+.nav_left {
+	background: #FFFFFF;
+	vertical-align: top; 
+	width: 184px;
+}

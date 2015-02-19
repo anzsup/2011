@@ -1,0 +1,443 @@
+/* Swinburne Form Styles
+   
+   Updated: Tue 08.10.08
+   ----------------------------------------------------*/
+
+form {
+	vertical-align: top;
+	margin: 0;
+}
+
+/* OLD TEMPLATE FORM ELEMENTS STYLES
+   ----------------------------------------------------*/
+.form_button {
+	background-color: #ccc;
+	font-size: 0.90em;
+	font-family: Arial, Geneva, Helvetica;
+	font-weight: bold;
+	border: 1px solid #FFF;
+	border-width: 1px;
+	border-right-style: inset;
+	border-bottom-style: inset;
+	border-bottom-color: #666;
+	border-right-color: #666;
+}
+
+.form_dropdown {
+	font-family: Arial, Geneva, Helvetica;
+	font-size:1em;
+	color: #3A3939;
+	border: 1px solid #666;
+	width: 195px;
+}
+
+.form_textfield {
+	font-family: Arial, Geneva, Helvetica;
+	font-size:1em;
+	color: #3A3939;
+	border: 1px solid #666;
+	width: 190px;
+}
+
+.form_textfield_small {
+	font-family: Arial, Geneva, Helvetica;
+	font-size:1em;
+	color: #3A3939;
+	border: 1px solid #666;
+	width: 140px;
+}
+
+.form_textarea {
+	/* Couldn't use inherit - doesn't work in IE quirks mode. */
+	font-family: Arial, Geneva, Helvetica;
+	font-size:1em;
+	color: #3A3939;
+	border: 1px solid #666;
+}
+
+.form_radio_group { 
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* OLD MY FORM/ WEB ADMIN AREA ELEMENTS STYLES (Table based, remove once replaced)
+   ----------------------------------------------------*/
+.admin_list {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	margin-top: 1em;
+}
+
+.admin_list td {
+	margin: 0;
+	padding: 4px;
+	background: #F1F1F1;
+	border-bottom: 1px solid #FFF;
+	vertical-align: top;
+}
+
+.admin_list td.menu {
+	padding-left: 12px;	
+	background: #F1F1F1 url(/images/arrow7.gif) no-repeat top left;
+}
+
+.admin_list td.submenu {
+	padding-left: 20px;
+	background: #F1F1F1 url(/images/arrow5.gif) no-repeat 12px .75em;
+}
+
+.admin_list tr.dark td.menu {
+	padding-left: 12px;	
+	background: #E8E8E8 url(/images/arrow7.gif) no-repeat top left;
+}
+
+.admin_list tr.dark td.submenu {
+	padding-left: 20px;
+	background: #E8E8E8 url(/images/arrow5.gif) no-repeat 12px .75em;
+}
+
+.admin_list tr.invisible td.menu a, .admin_list tr.invisible td.submenu a {
+	color: #555;
+}
+
+.admin_list th {
+	text-align: left;
+	background: #CCC;
+	padding: 4px;
+	border-bottom: 1px solid #BBB;
+}
+
+.admin_list tr.dark td {
+	background: #E8E8E8
+}
+
+.admin_list select {
+	height: 2em;
+	font-size: 1em;
+}
+
+.admin_list label select {
+	margin-left: .5em;
+}
+
+.admin_list input, textarea {
+	/*font-size: em;
+	font-family: "MS Shell Dlg", Arial, Helvetica, sans-serif*/
+}
+
+.admin_list input[type=text] {
+	border: 1px solid #555;
+	padding-left: 2px;
+}
+
+.admin_list textarea {
+	width: 420px;
+	/*height: 100px;*/
+	border: 1px solid #555;
+	padding-left: 2px;
+}
+
+.admin_list label {
+	color: #3A3939;
+	position: relative;
+	width: 100%;
+	display: block;
+}
+
+.admin_list abbr {
+	font-weight: normal;
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #E91C17;
+	border: none;
+}
+
+.admin_list abbr {
+	color: #E91C17;
+}
+
+.error { 
+	color: #E81C17; 
+	font-weight: bold;
+}
+
+.login_box .error {
+	background: #E91C17;
+	color: white;
+	font-weight: normal;
+}
+
+.admin_list .main_ul_2 {
+	padding: 1em;
+}
+
+/*.greyDottedLine {
+	display:block;
+	background: url(/images/main_div_gray_bg.gif) repeat-x bottom;
+	height:13px;
+}*/
+.msg {
+	background: #F9F9F9;
+	border: 1px solid #DDD;
+	padding: 10px;
+}
+
+
+/* NEW FORM STYLES
+   ----------------------------------------------------*/
+form fieldset { 
+	margin: 0 0 8px; 
+	padding:0; 
+	border: 0; 
+}
+
+form fieldset.group {
+	clear: both; 
+}
+
+form fieldset label { 
+	float: left; 
+	width: 11em; 
+	margin: 0 1em 0 0; 
+	font-weight: bold; 
+	line-height: 1.5em; 
+}
+
+form fieldset div {
+	float: left; 
+	width: 11em; 
+	margin: 0 1em 0 0; 
+	font-weight: bold; 
+	line-height: 1.5em; 
+}
+
+form fieldset div.field { 
+	float: left; 
+	margin: 0 1em 0 0; 
+	width: auto;
+	font-weight: normal; 
+}
+
+form fieldset div.field div { 
+	font-weight: normal; 
+	margin:2px 0 0; 
+	width: auto;
+}
+
+form fieldset div.field label { 
+	float: none; 
+	width: auto; 
+	font-weight: normal; 
+}
+
+form fieldset div.field input.input-text { 
+	padding: 2px; 
+	font-family: Arial, sans-serif; 
+	font-size: 1em; 
+	color: #646870; 
+	border:1px solid #ccc; 
+}
+
+form fieldset div.field input[type=radio] { 
+	vertical-align:top; 
+}
+
+form div.submit { 
+	clear: both; 
+	padding: 5px 0 15px 13em; 
+}
+
+form div.submit img,
+form div.submit input { 
+	margin-right:10px; 
+}
+
+form .sml { 
+	width:4em; 
+}
+form .med { 
+	width:8em; 
+}
+form .lge { 
+	width:14em; 
+}
+
+form#event-submission, form#standard { 
+	background:#fafafa; 
+	margin:0 0 2em; 
+}
+
+form#event-submission h4, form#standard h4 { 
+	background:#dedadb; 
+	font-weight:normal; 
+	margin:0 0 10px; 
+	padding:5px; 
+	color: #444444;
+}
+
+form#event-submission fieldset, form#standard fieldset { 
+	margin-left:15px; 
+	margin-right:15px; 
+}
+
+
+/* MYFORM STYLES
+   ----------------------------------------------------*/
+#myforms fieldset {
+	float: left;
+	clear: left;
+	width: 100%;
+	margin: 0 0 0 0;
+	/*margin: 0 0 1.5em 0;*/
+	padding: 0;
+	background-color: #fafafa;
+	background-repeat: repeat-x;
+}
+
+#myforms h2 {
+	background: #DEDADB;
+	padding:5px;
+	margin:0px;
+	color: #585858;
+	font-size: 1em;
+}
+
+#myforms fieldset ol {
+	padding: 1em 1em 0 1em;
+	list-style: none;
+	/*zoom: 1;*/
+	margin:0px;
+}
+
+#myforms fieldset li {
+	float: left;
+	clear: left;
+	width: 100%;
+	padding-bottom: 1.5em;
+}
+
+/* This to overrise previous label field */
+#myforms form fieldset label {
+	width:13em;
+}
+
+#myforms label {
+	position: relative;
+	float: left;
+	width: 13em;
+	margin-right: 1em;
+}
+
+/* Error Messages */
+#myforms label strong {
+	display: block;
+	color:#CC0000;
+	font-size: 90%;
+	font-weight: normal;
+	text-transform: uppercase;
+	width: 14.0em;
+	line-height:1.1em;
+	padding-top: 3px;
+	
+}
+
+#myforms fieldset fieldset {
+	position: relative;
+	/*margin-bottom: -2.5em;*/
+	border-style: none;
+	background-color: transparent;
+	background-image: none;
+	/*padding-bottom: 10px;*/
+}
+
+/* Alternative for labels on checklist, radio and security codes*/
+#myforms fieldset fieldset div, .security {
+	position: relative;
+	float: left;
+	width: 13em;
+	margin-right: 1em;
+	font-weight:bold;
+}
+
+/* Error Messages for Radio, Checklists*/
+#myforms fieldset fieldset div strong {
+	display: block;
+	color:#CC0000;
+	font-size: 90%;
+	font-weight: normal;
+	text-transform: uppercase;
+	width: 14.0em;
+	line-height:1.1em;
+	padding-top: 3px;
+	padding-bottom: 10px;
+}
+
+#myforms fieldset fieldset ol {
+	float:left;
+	margin: 0 0 0 0em;
+	padding: 0 0 0em 0;
+}
+
+#myforms fieldset fieldset li {
+	padding-bottom:0.5em;
+}
+
+#myforms fieldset fieldset label {
+	float: none;
+	width: auto;
+	margin-right: auto;
+	font-weight: normal;
+}
+
+#myforms fieldset.submit {
+	float: none;
+	width: auto;
+	border-style: none;
+	padding-left: 15em;
+	padding-bottom: 1.5em;
+	/*background-color: transparent;*/
+	background-color: #fafafa;
+	background-image: none;
+}
+
+#myforms .input-text {
+	padding: 2px; 
+	font-family: Arial, sans-serif; 
+	font-size: 1em; 
+	color: #646870; 
+	border:1px solid #ccc; 
+}
+
+#myforms abbr {
+	border:medium none;
+	color:#E91C17;
+	font-weight:normal;
+	position:absolute;
+	right:0pt;
+	top:0pt;
+}
+
+#myforms #siimage {
+	float:left;
+	width: 175px;
+	border:1px solid #cccccc;
+}
+
+#myforms select {
+	padding: 0px; 
+	font-family: Arial, sans-serif; 
+	font-size: 1em; 
+	color: #646870; 
+	border:1px solid #ccc; 
+}
+
+#myforms fieldset li.hidden {
+	display: none;
+}
+
+p.key {
+	text-align:right;
+}
